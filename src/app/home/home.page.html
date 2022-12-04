@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      File Downloader
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" offset="3">
+        <ion-button color="success" (click)="onCreateExcel()" expand="block">Download Excel File</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6" offset="3">
+        <ion-button color="danger" (click)="onCreatePdf()" expand="block">Download PDF File</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
